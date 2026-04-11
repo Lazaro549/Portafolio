@@ -60,7 +60,7 @@
 
     header {
       background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
-                  
+                  url('resources/Profile.png') center/cover no-repeat; /* fondo opcional */
       color: white;
       padding: 9rem 0 5rem;
       text-align: center;
@@ -88,6 +88,7 @@
       transform: translateY(-4px);
     }
 
+    /* Botones del header (CV + posible sponsor) */
     .header-btn {
       display: inline-block;
       padding: 0.9rem 2rem;
@@ -349,7 +350,7 @@
 </head>
 <body>
 
-  <!-- ==================== MENÚ STICKY (agregado) ==================== -->
+  <!-- ==================== MENÚ STICKY ==================== -->
   <nav class="navbar">
     <div class="container nav-content">
       <div class="nav-logo"><img src="resources/Lazaro.jpg" alt="Lázaro Gómez Vitolo" width="180px" height="60px"></div>
@@ -378,7 +379,15 @@
         <a href="tel:+542233118181" title="Phone"><i class="fas fa-phone"></i></a>
       </div>
       
-    
+      <!-- ==================== BOTÓN CV AÑADIDO ==================== -->
+      <a href="Lazaro Gomez Vitolo-CV.pdf" 
+         class="header-btn cv-btn" 
+         target="_blank" 
+         download="Lazaro Gomez Vitolo-CV.pdf">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+      <!-- ======================================================== -->
+
     </div>
   </header>
 
@@ -492,6 +501,11 @@
     <div class="container">
       <p>© 2026 Lázaro Gómez Vitolo • <a href="https://github.com/Lazaro549" target="_blank">github.com/Lazaro549</a></p>
       <p>Building the future with AI & Robotics • Mar del Plata, Argentina</p>
+      <p style="margin-top: 1rem;">
+        <a href="Lazaro Gomez Vitolo-CV.pdf" style="color:var(--primary); font-weight:500;" download>
+          <i class="fas fa-download"></i> Download full CV (PDF)
+        </a>
+      </p>
     </div>
   </footer>
 
