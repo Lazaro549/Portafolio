@@ -107,19 +107,19 @@
       transition: 0.3s;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    .sponsor-btn {
-      background: #ea4aaa;
-      color: white;
-    }
-    .sponsor-btn:hover {
-      background: #d33f96;
-      transform: translateY(-3px);
-    }
     .cv-btn {
       background: var(--primary);
       color: white;
     }
     .cv-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+    .cover-btn {
+      background: var(--primary);
+      color: white;
+    }
+    .cover-btn:hover {
       background: var(--primary-dark);
       transform: translateY(-3px);
     }
@@ -340,10 +340,7 @@
       border-top: 1px solid rgba(15, 107, 58, 0.15);
     }
     footer a { color: var(--primary); text-decoration: none; }
-    .footer-sponsor {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
+    
 
     @media (max-width: 768px) {
       header h1 { font-size: 2.6rem; }
@@ -377,7 +374,7 @@
       <img src="resources/Profile.png" 
            alt="Lázaro Gómez Vitolo Profile Picture" class="avatar">
       <h1>Lázaro Gómez Vitolo</h1>
-      <p>AI & Robotics Developer</p>
+      <p>AI & Robotics Developer | Python • Node.js • AWS</p>
       <div class="social-links">
         <a href="https://github.com/Lazaro549" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/lazaro-gomez-vitolo-532109340/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -393,7 +390,12 @@
         <i class="fas fa-download"></i> Download CV
       </a>
       <!-- ======================================================== -->
-    
+      <a href="Cover Letter.docx" 
+         class="header-btn cover-btn" 
+         target="_blank" 
+         download="Lazaro Gomez Vitolo-Cover Letter.docx">
+        <i class="fas fa-download"></i> Download Cover Letter
+      </a>
     </div>
   </header>
 
